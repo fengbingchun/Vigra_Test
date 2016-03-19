@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\bmp.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\byteorder.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\codecmanager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\exr.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\gif.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\hdr.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\hdf5impex.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\hdf5_rf_impex.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\iccjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\imageinfo.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\jpeg.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\png.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\pnm.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\rgbe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\sifImport.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\sun.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\tiff.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\viff.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\void_vector.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\impex\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3019EB43-0CFB-4BF2-9634-5B930909FB7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

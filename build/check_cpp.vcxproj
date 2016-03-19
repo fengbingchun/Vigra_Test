@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{BCA014EE-F7EF-4DCA-87A8-8BC17FBDACA2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>check_cpp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitCode\Vigra_Test\vigra-1.10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitCode\Vigra_Test\vigra-1.10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GitCode\Vigra_Test\vigra-1.10.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/GitCode/Vigra_Test/vigra-1.10.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\ProgramFiles\CMake\bin\cmake.exe -HE:/GitCode/Vigra_Test/vigra-1.10.0 -BE:/GitCode/Vigra_Test/build --check-stamp-file E:\GitCode\Vigra_Test\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/GitCode/Vigra_Test/vigra-1.10.0/CMakeLists.txt;E:\GitCode\Vigra_Test\vigra-1.10.0\CMakeLists.txt;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeSystem.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeCCompiler.cmake;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraSetDefaults.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraCMakeUtils.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraFindPackage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPNG.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindFFTW3.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindFFTW3F.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindHDF5.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindDoxygen.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindVIGRANUMPY_DEPENDENCIES.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindBoost.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\CPackConfig.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CPack.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CPackComponent.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Templates\CPackConfig.cmake.in;D:\ProgramFiles\CMake\share\cmake-3.3\Templates\CPackConfig.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\package-src.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfigBuild.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfigVersion.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfig.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfigVersion.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\GitCode\Vigra_Test\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/GitCode/Vigra_Test/vigra-1.10.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\ProgramFiles\CMake\bin\cmake.exe -HE:/GitCode/Vigra_Test/vigra-1.10.0 -BE:/GitCode/Vigra_Test/build --check-stamp-file E:\GitCode\Vigra_Test\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/GitCode/Vigra_Test/vigra-1.10.0/CMakeLists.txt;E:\GitCode\Vigra_Test\vigra-1.10.0\CMakeLists.txt;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeSystem.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeCCompiler.cmake;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;E:\GitCode\Vigra_Test\build\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraSetDefaults.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraCMakeUtils.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraFindPackage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPNG.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindFFTW3.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindFFTW3F.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindHDF5.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindDoxygen.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\FindVIGRANUMPY_DEPENDENCIES.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindBoost.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;E:\GitCode\Vigra_Test\vigra-1.10.0\config\CPackConfig.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CPack.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Modules\CPackComponent.cmake;D:\ProgramFiles\CMake\share\cmake-3.3\Templates\CPackConfig.cmake.in;D:\ProgramFiles\CMake\share\cmake-3.3\Templates\CPackConfig.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\package-src.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfigBuild.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfigVersion.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfig.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\config\VigraConfigVersion.cmake.in;E:\GitCode\Vigra_Test\vigra-1.10.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\GitCode\Vigra_Test\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/ZERO_CHECK.vcxproj">
+      <Project>76FA2F28-0970-43FC-A3E5-8FCF98757634</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/classifier/classifier_speed_comparison.vcxproj">
+      <Project>0061B23A-C00D-4EFD-AEA0-12A391768CC4</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/classifier/test_classifier.vcxproj">
+      <Project>84AB7F9E-D566-4EF1-AF77-1CC2BF039C41</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/colorspaces/test_colorspaces.vcxproj">
+      <Project>2DD0A40E-9D85-4A60-8DC8-9022A8DEB2C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/convolution/test_convolution.vcxproj">
+      <Project>7562218D-5877-4D4F-B449-4E454E4DB619</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/coordinateiterator/test_coordinateiterator.vcxproj">
+      <Project>761146C5-0742-4B5A-A6A2-56595784A46D</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/error/test_error.vcxproj">
+      <Project>35C5EBB7-E9AB-4EDE-93B2-CDE30764C2DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/functorexpression/test_functorexpression.vcxproj">
+      <Project>EE697E6A-2B34-4ABF-8C72-3FBF19E30D50</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/gridgraph/test_gridgraph.vcxproj">
+      <Project>77539B8F-3835-4877-BEC4-2903FF19D1E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/image/test_image.vcxproj">
+      <Project>278F00C0-F0A2-4BBE-96F1-97C97D695C66</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/imgproc/test_imgproc.vcxproj">
+      <Project>AAB74237-6D4A-4D18-81A3-B7D2A3E8CB0C</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/impex/test_impex.vcxproj">
+      <Project>7F0CFC3A-5AC9-4389-86B6-165E1B46D2C8</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/math/test_math.vcxproj">
+      <Project>83193C96-AD0C-447E-9DA4-1AA15B101741</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/morphology/test_morphology.vcxproj">
+      <Project>750944B7-2598-4945-821F-8DBB6C9608C8</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/multiarray/test_multiarray.vcxproj">
+      <Project>076238B4-A8EE-4D7B-ADCE-AF50E684FFE4</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/multiconvolution/test_multiconvolution.vcxproj">
+      <Project>D732B2A6-C3A9-455E-A91E-0024FF40CA10</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/multiconvolution/test_multiconvolution_speed.vcxproj">
+      <Project>BA974B5C-775A-4734-B4B2-770B47004AFC</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/multidistance/test_multidistance.vcxproj">
+      <Project>FECE7738-55B2-4C53-85C9-1C1300B41FEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/multimorphology/test_multimorphology.vcxproj">
+      <Project>D8AC71E9-9C74-42F1-9551-FEF3EE15DD56</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/objectfeatures/test_objectfeatures.vcxproj">
+      <Project>E5E323F2-DD67-417E-ABAA-DC41635572EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/optimization/test_optimization.vcxproj">
+      <Project>669E8CFA-5296-4FCB-816F-3444CCC4027B</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/pixeltypes/test_pixeltypes.vcxproj">
+      <Project>4234E1F6-AED7-4D27-A746-216884F86BF0</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/sampler/test_sampler.vcxproj">
+      <Project>9EAD5B48-690E-45B7-84D7-D83B1228A0C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/seededRegionGrowing3d/test_seededRegionGrowing3d.vcxproj">
+      <Project>62B7C0FB-8F67-42F9-933A-71D274E2A73C</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/sifImport/test_sifImport.vcxproj">
+      <Project>F8D2C181-BCA1-468B-BB54-10A904837914</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/simpleanalysis/test_simpleanalysis.vcxproj">
+      <Project>DBAB27E3-C7D9-4133-A7ED-C5E54BA5239F</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/slic2d/test_slic2d.vcxproj">
+      <Project>F1D1C37A-4113-4EA8-8D17-F4051A74D7F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/tensorimaging/test_tensorimaging.vcxproj">
+      <Project>9E824C61-D180-4F1B-B265-5A439845C118</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/unsupervised/test_unsupervised.vcxproj">
+      <Project>3D23C3E1-4F91-4E5F-B2E5-C2042D3E88F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/utilities/test_utilities.vcxproj">
+      <Project>21930406-AEDA-4AED-9C29-CFF066750AAA</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/volumelabeling/test_volumelabeling.vcxproj">
+      <Project>7FA3A693-9AF3-426F-A230-BB077180DAF7</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/voxelneighborhood/test_voxelneighborhood.vcxproj">
+      <Project>C488AF5D-EBA3-4EC1-B26D-E3C6034E63F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/test/watersheds3d/test_watersheds3d.vcxproj">
+      <Project>E7ED62D6-0052-4631-84EF-85E5FC4A290B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

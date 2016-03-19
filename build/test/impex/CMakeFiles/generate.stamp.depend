@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/CMakeLists.txt
+E:/GitCode/Vigra_Test/vigra-1.10.0/config/run_test.bat.in
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna_gifref.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lennafloat.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lennafloatrgb.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lennargb.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/no-image.txt
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna_0.tif
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna_1.tif
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna_2.tif
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna_masked_color.tif
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/impex/lenna_masked_gray.tif

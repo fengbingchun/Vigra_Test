@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/CMakeLists.txt
+E:/GitCode/Vigra_Test/vigra-1.10.0/config/run_test.bat.in
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna128.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna128rgb.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/splineimageview2.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/splineimageview3.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/splineimageview5.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna42lin.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna288neu.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna42neu.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna288rgbneu.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna42rgbneu.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna367FIR.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna42FIR.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna367IIR.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna42IIR.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna42linrgb.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lennargb42FIR.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lennargb42IIR.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/imgproc/lenna_rotate.xv

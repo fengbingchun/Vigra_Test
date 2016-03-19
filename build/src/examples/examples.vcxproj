@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8796E21F-1D0A-4F57-8E9D-52D52A85FBD6}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>examples</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitCode\Vigra_Test\vigra-1.10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitCode\Vigra_Test\vigra-1.10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GitCode\Vigra_Test\vigra-1.10.0\src\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/GitCode/Vigra_Test/vigra-1.10.0/src/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\ProgramFiles\CMake\bin\cmake.exe -HE:/GitCode/Vigra_Test/vigra-1.10.0 -BE:/GitCode/Vigra_Test/build --check-stamp-file E:\GitCode\Vigra_Test\build\src\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/GitCode/Vigra_Test/vigra-1.10.0/src/examples/CMakeLists.txt;E:\GitCode\Vigra_Test\vigra-1.10.0\src\examples\CMakeLists.txt;E:\GitCode\Vigra_Test\vigra-1.10.0\src\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\GitCode\Vigra_Test\build\src\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/GitCode/Vigra_Test/vigra-1.10.0/src/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\ProgramFiles\CMake\bin\cmake.exe -HE:/GitCode/Vigra_Test/vigra-1.10.0 -BE:/GitCode/Vigra_Test/build --check-stamp-file E:\GitCode\Vigra_Test\build\src\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/GitCode/Vigra_Test/vigra-1.10.0/src/examples/CMakeLists.txt;E:\GitCode\Vigra_Test\vigra-1.10.0\src\examples\CMakeLists.txt;E:\GitCode\Vigra_Test\vigra-1.10.0\src\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\GitCode\Vigra_Test\build\src\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/ZERO_CHECK.vcxproj">
+      <Project>76FA2F28-0970-43FC-A3E5-8FCF98757634</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_boundarytensor.vcxproj">
+      <Project>864AFD96-61E9-4461-9C79-5DCE6828E7C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_convert.vcxproj">
+      <Project>30E128FC-BD7B-4040-85F9-39579937345F</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_edge.vcxproj">
+      <Project>534104B9-BA07-41B5-9399-D96B4E15189E</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_invert.vcxproj">
+      <Project>3A1C0768-2C9D-4CD3-ABCD-8C543991CE04</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_invert_explicitly.vcxproj">
+      <Project>F39BBDBC-8B26-4616-8486-7E549674BB50</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_palette.vcxproj">
+      <Project>F6910007-B014-4F33-9D7C-2EB9A8EF4775</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_profile.vcxproj">
+      <Project>514A3D14-C265-47CC-9214-9FEFD6EA3E85</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_pyramid.vcxproj">
+      <Project>03980423-3732-4402-B44C-3ECDF7678F7D</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_resize.vcxproj">
+      <Project>8C54BE2E-E20B-419B-8EB6-2A19F6185ACD</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_smooth.vcxproj">
+      <Project>249C0B0A-2A57-428F-87A4-9F60B8837345</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_subimage.vcxproj">
+      <Project>37E96A62-A6FF-4AD3-8E3B-7EA6440669A7</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_total_variation.vcxproj">
+      <Project>3D9AA0F3-3166-4FBE-B8CC-67EF0109A5E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_voronoi.vcxproj">
+      <Project>F3A4A9C0-7B15-4BFC-B743-E3FFE68B9479</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_watershed.vcxproj">
+      <Project>5E468FC0-3CF3-4EF6-9A92-F19A86B24E47</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitCode/Vigra_Test/build/src/examples/example_weightedWatersheds.vcxproj">
+      <Project>E5A52064-94C5-4543-A66F-B1AB86DCED2A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

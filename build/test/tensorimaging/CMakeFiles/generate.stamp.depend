@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/CMakeLists.txt
+E:/GitCode/Vigra_Test/vigra-1.10.0/config/run_test.bat.in
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/l2.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/riesz00.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/riesz10.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/riesz01.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/riesz20.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/riesz11.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/riesz02.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/boundaryTensor.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/l2_boundary1.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/l2_boundary.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/l2_hourglass.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/tensorimaging/l2_get.xv

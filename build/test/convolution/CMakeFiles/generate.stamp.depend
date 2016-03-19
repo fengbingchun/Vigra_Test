@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/CMakeLists.txt
+E:/GitCode/Vigra_Test/vigra-1.10.0/config/run_test.bat.in
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna128.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_simple_sharpening_orig.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_gaussian_sharpening_orig.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna128sepgrad.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennahessxx.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennastxx.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna128recgrad.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna128nonlinear.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/resampling.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennahessyy.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennastyy.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennahessxy.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennastxy.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna128rgb.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna128rgbsepgrad.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_level-2.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_level-1.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_level1.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_level2.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_levellap0.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_levellap1.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lenna_levellap2.xv
+E:/GitCode/Vigra_Test/vigra-1.10.0/test/convolution/lennargbst.xv
